@@ -2,7 +2,7 @@
 class BlueSpicePageTree extends BsExtensionMW {
 	// Register any render callbacks with the parser
 	public static function onParserSetup( Parser $parser ) {
-		// When the parser sees the <sample> tag, it executes renderTagSample (see below)
+		// When the parser sees the <pagetree> tag, it executes BlueSpicePageTree::renderPageTree
 		$parser->setHook( 'pagetree', 'BlueSpicePageTree::renderPageTree' );
 
 		return true;
@@ -12,14 +12,18 @@ class BlueSpicePageTree extends BsExtensionMW {
 	public static function renderPageTree( $input, array $args, Parser $parser, PPFrame $frame ) {
 		$parser->getOutput()->addModules("ext.bluespice.pagetree");
 
+		$treeRoot = "";
 		if( !empty( $args["root"] ) ){
-			$parser->getOutput()->addJsConfigVars( "bsPageTreeRoot", $args["root"] );
+			$treeRoot = $args["root"];
 		}else{
-			global $wgBlueSpicePageTreeRoot;
-			$parser->getOutput()->addJsConfigVars( "bsPageTreeRoot", $wgBlueSpicePageTreeRoot );
+			global $bsgPageTreeRoot;
+			$treeRoot = $bsgPageTreeRoot;
+		}
+		if( strpos( $treeRoot, ":" ) === false ){
+			$treeRoot = ":" . $treeRoot;
 		}
 
-		return "<div id='pagetree'></div>";
+		return "<div class='pagetree' root='" . $treeRoot . "'></div>";
 	}
 
 }

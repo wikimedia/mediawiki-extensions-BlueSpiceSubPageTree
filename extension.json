@@ -31,8 +31,10 @@
 	"Hooks": {
 		"ParserFirstCallInit": "BlueSpicePageTree::onParserSetup"
 	},
+
 	"config": {
-		"BlueSpicePageTreeRoot": ":"
+		"_prefix": "bsgPageTree",
+		"Root": ":"
 	},
 	"manifest_version": 1
 }
