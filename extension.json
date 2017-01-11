@@ -1,17 +1,17 @@
 {
-	"name": "BlueSpicePageTree",
+	"name": "BlueSpiceSubPageTree",
 	"version": "2.27.1-alpha",
-	"url": "https://help.bluespice.com/index.php/BlueSpicePageTree",
+	"url": "https://help.bluespice.com/index.php/BlueSpiceSubPageTree",
 	"author": "Leonid Verhovskij",
 	"descriptionmsg": "bs-pagetreee-desc",
 	"type": "bluespice",
 	"AutoloadClasses": {
-		"BlueSpicePageTree": "BlueSpicePageTree.class.php"
+		"BlueSpiceSubPageTree": "BlueSpiceSubPageTree.class.php"
 	},
 	"ResourceModules": {
-		"ext.bluespice.pagetree": {
+		"ext.bluespice.subpagetree": {
 			"scripts": [
-				"bluespice.pagetree.js"
+				"bluespice.subpagetree.js"
 			],
 			"dependencies":[
 				"ext.bluespice.extjs"
@@ -20,20 +20,20 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteExtPath": "BlueSpicePageTree"
+		"remoteExtPath": "BlueSpiceSubPageTree"
 	},
 	"bsgExtensions": {
-		"BlueSpicePageTree": {
-			"className": "BlueSpicePageTree",
-			"extPath": "/BlueSpicePageTree"
+		"BlueSpiceSubPageTree": {
+			"className": "BlueSpiceSubPageTree",
+			"extPath": "/BlueSpiceSubPageTree"
 		}
 	},
 	"Hooks": {
-		"ParserFirstCallInit": "BlueSpicePageTree::onParserSetup"
+		"ParserFirstCallInit": "BlueSpiceSubPageTree::onParserSetup"
 	},
 
 	"config": {
-		"_prefix": "bsgPageTree",
+		"_prefix": "bsgSubPageTree",
 		"Root": ":"
 	},
 	"manifest_version": 1

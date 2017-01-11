@@ -1,16 +1,16 @@
 <?php
-class BlueSpicePageTree extends BsExtensionMW {
+class BlueSpiceSubPageTree extends BsExtensionMW {
 	// Register any render callbacks with the parser
 	public static function onParserSetup( Parser $parser ) {
-		// When the parser sees the <pagetree> tag, it executes BlueSpicePageTree::renderPageTree
-		$parser->setHook( 'pagetree', 'BlueSpicePageTree::renderPageTree' );
+		// When the parser sees the <pagetree> tag, it executes BlueSpiceSubPageTree::renderPageTree
+		$parser->setHook( 'pagetree', 'BlueSpiceSubPageTree::renderPageTree' );
 
 		return true;
 	}
 
 	// Render pagetree
 	public static function renderPageTree( $input, array $args, Parser $parser, PPFrame $frame ) {
-		$parser->getOutput()->addModules("ext.bluespice.pagetree");
+		$parser->getOutput()->addModules("ext.bluespice.subpagetree");
 
 		$treeRoot = "";
 		if( !empty( $args["root"] ) ){

@@ -2,7 +2,7 @@ var treeNodes = Ext.query('.pagetree');
 
 treeNodes.forEach(function(node){
 	Ext.create('BS.tree.WikiSubPages', {
-		renderTo: node,//this div is created by BlueSpicePageTree::renderPageTree (ParserFirstCallInit)
+		renderTo: node,//this div is created by BlueSpiceSubPageTree::renderPageTree (ParserFirstCallInit)
 		treeRootPath: node.getAttribute("root"),
 		listeners: {
 			itemclick: function( obj, record, item, index, e, eOpts ){
