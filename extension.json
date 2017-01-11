@@ -1,0 +1,40 @@
+{
+	"name": "BlueSpicePageTree",
+	"version": "2.27.1-alpha",
+	"url": "https://help.bluespice.com/index.php/BlueSpicePageTree",
+	"author": "Leonid Verhovskij",
+	"descriptionmsg": "bs-pagetreee-desc",
+	"type": "bluespice",
+	"AutoloadClasses": {
+		"BlueSpicePageTree": "BlueSpicePageTree.class.php"
+	},
+	"ResourceModules": {
+		"ext.bluespice.pagetree": {
+			"scripts": [
+				"bluespice.pagetree.js"
+			],
+			"dependencies":[
+				"ext.bluespice.extjs"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "BlueSpicePageTree"
+	},
+	"bsgExtensions": {
+		"BlueSpicePageTree": {
+			"className": "BlueSpicePageTree",
+			"extPath": "/BlueSpicePageTree"
+		}
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "BlueSpicePageTree::onParserSetup"
+	},
+
+	"config": {
+		"_prefix": "bsgPageTree",
+		"Root": ":"
+	},
+	"manifest_version": 1
+}
