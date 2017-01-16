@@ -1,4 +1,5 @@
 <?php
+
 class BlueSpiceSubPageTree extends BsExtensionMW {
 	// Register any render callbacks with the parser
 	public static function onParserSetup( Parser $parser ) {
@@ -8,22 +9,38 @@ class BlueSpiceSubPageTree extends BsExtensionMW {
 		return true;
 	}
 
-	// Render pagetree
+	/**
+	 *
+	 * @global string $bsgSubPageTreeRoot
+	 * @param sting $input
+	 * @param array $args
+	 * @param Parser $parser
+	 * @param PPFrame $frame
+	 * @return boolean
+	 */
 	public static function renderPageTree( $input, array $args, Parser $parser, PPFrame $frame ) {
 		$parser->getOutput()->addModules("ext.bluespice.subpagetree");
 
-		$treeRoot = "";
+		$sTreeRoot = "";
 		if( !empty( $args["root"] ) ){
-			$treeRoot = $args["root"];
-		}else{
-			global $bsgPageTreeRoot;
-			$treeRoot = $bsgPageTreeRoot;
+			$sTreeRoot = $args["root"];
 		}
-		if( strpos( $treeRoot, ":" ) === false ){
-			$treeRoot = ":" . $treeRoot;
+		else {
+			global $bsgSubPageTreeRoot;
+			$sTreeRoot = $bsgSubPageTreeRoot;
 		}
 
-		return "<div class='pagetree' root='" . $treeRoot . "'></div>";
+		if( strpos( $sTreeRoot, ":" ) === false ){
+			$sTreeRoot = ":" . $sTreeRoot;
+		}
+
+		return Html::element(
+			'div',
+			array(
+				'class' => 'bs-subpagetree',
+				'data-root' => $sTreeRoot
+			),
+			''
+		);
 	}
-
 }

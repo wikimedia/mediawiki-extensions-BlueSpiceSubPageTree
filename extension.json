@@ -3,7 +3,7 @@
 	"version": "2.27.1-alpha",
 	"url": "https://help.bluespice.com/index.php/BlueSpiceSubPageTree",
 	"author": "Leonid Verhovskij",
-	"descriptionmsg": "bs-pagetreee-desc",
+	"descriptionmsg": "bs-subagetreee-desc",
 	"type": "bluespice",
 	"AutoloadClasses": {
 		"BlueSpiceSubPageTree": "BlueSpiceSubPageTree.class.php"
@@ -19,8 +19,8 @@
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteExtPath": "BlueSpiceSubPageTree"
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceSubPageTree/resources"
 	},
 	"bsgExtensions": {
 		"BlueSpiceSubPageTree": {
