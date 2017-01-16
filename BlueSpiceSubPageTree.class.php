@@ -5,6 +5,7 @@ class BlueSpiceSubPageTree extends BsExtensionMW {
 	public static function onParserSetup( Parser $parser ) {
 		// When the parser sees the <pagetree> tag, it executes BlueSpiceSubPageTree::renderPageTree
 		$parser->setHook( 'pagetree', 'BlueSpiceSubPageTree::renderPageTree' );
+		$parser->setHook( 'subpagetree', 'BlueSpiceSubPageTree::renderPageTree' );
 
 		return true;
 	}

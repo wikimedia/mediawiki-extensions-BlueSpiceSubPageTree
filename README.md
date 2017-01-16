@@ -1,20 +1,14 @@
 # mediawiki-extensions-BlueSpicePageTree
-make &lt;pagetree root="Namespace:Rootpage" /> tag available and show extjs tree panel with subpage structure
-
-## Installation
-
-Inside of MediaWiki base path:
-
-	git clone https://github.com/ljonka/mediawiki-extensions-BlueSpicePageTree.git extensions/BlueSpicePageTree
+make <subpagetree root="Namespace:Rootpage" /> tag available and show extjs tree panel with subpage structure
 
 Dependencies:
 
 	BlueSpiceFoundation
 
-Activate Extension in LocalSettings.php
+Activate extension in LocalSettings.php
 
-	echo "wfLoadExtension(\"BlueSpicePageTree\");" >> LocalSettings.php
+	echo "wfLoadExtension(\"BlueSpiceSubPageTree\");" >> LocalSettings.php
 
-Usage in Wiki Editor
+Usage in WikiText
 
-	<pagetree root=":"/> or <pagetree root="Template:"/> or <pagetree root="Main Page"/>
+	<subpagetree root=":"/> or <subpagetree root="Template:"/> or <subpagetree root="Main Page"/>
