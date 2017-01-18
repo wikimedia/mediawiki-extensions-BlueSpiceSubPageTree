@@ -3,7 +3,6 @@
 	"version": "2.27.1-alpha",
 	"url": "https://help.bluespice.com/index.php/BlueSpiceSubPageTree",
 	"author": "Leonid Verhovskij",
-	"descriptionmsg": "bs-subagetreee-desc",
 	"type": "bluespice",
 	"AutoloadClasses": {
 		"BlueSpiceSubPageTree": "BlueSpiceSubPageTree.class.php"
