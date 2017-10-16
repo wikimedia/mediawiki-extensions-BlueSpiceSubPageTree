@@ -1,4 +1,11 @@
 {
+	"name": "mediawiki/blue-spice-sub-page-tree",
+	"type": "mediawiki-extension",
+	"description": "make <subpagetree root=\"Namespace:Rootpage\" /> tag available and show extjs tree panel with subpage structure",
+	"license": "GPL-3.0",
+	"require": {
+		"composer/installers": "~1.0"
+	},
 	"require-dev": {
 		"jakub-onderka/php-parallel-lint": "0.9.2",
 		"jakub-onderka/php-console-highlighter": "0.3.2"
