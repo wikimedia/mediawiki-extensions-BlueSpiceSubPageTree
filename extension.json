@@ -4,6 +4,7 @@
 	"url": "https://help.bluespice.com/index.php/BlueSpiceSubPageTree",
 	"author": "Leonid Verhovskij",
 	"type": "bluespice",
+	"descriptionmsg": "bs-subpagetree-desc",
 	"AutoloadClasses": {
 		"BlueSpiceSubPageTree": "BlueSpiceSubPageTree.class.php"
 	},
