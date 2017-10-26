@@ -8,6 +8,11 @@
 	"AutoloadClasses": {
 		"BlueSpiceSubPageTree": "BlueSpiceSubPageTree.class.php"
 	},
+	"MessagesDirs": {
+		"BlueSpiceSubPageTree": [
+			"i18n"
+		]
+	},
 	"ResourceModules": {
 		"ext.bluespice.subpagetree": {
 			"scripts": [
