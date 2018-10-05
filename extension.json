@@ -5,6 +5,22 @@
 	"author": "Leonid Verhovskij",
 	"type": "bluespice",
 	"descriptionmsg": "bs-subpagetree-desc",
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceSubPageTree": {
+					"className": "BlueSpiceSubPageTree",
+					"extPath": "/BlueSpiceSubPageTree"
+				}
+			}
+		}
+	},
+	"requires": {
+		"MediaWiki": ">= 1.31.0",
+		"extensions": {
+			"BlueSpiceFoundation": "*"
+		}
+	},
 	"AutoloadClasses": {
 		"BlueSpiceSubPageTree": "BlueSpiceSubPageTree.class.php"
 	},
@@ -27,19 +43,14 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceSubPageTree/resources"
 	},
-	"bsgExtensions": {
-		"BlueSpiceSubPageTree": {
-			"className": "BlueSpiceSubPageTree",
-			"extPath": "/BlueSpiceSubPageTree"
-		}
-	},
 	"Hooks": {
 		"ParserFirstCallInit": "BlueSpiceSubPageTree::onParserSetup"
 	},
-
+	"config_prefix": "bsg",
 	"config": {
-		"_prefix": "bsgSubPageTree",
-		"Root": ":"
+		"SubPageTreeRoot": {
+			"value": ":"
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
