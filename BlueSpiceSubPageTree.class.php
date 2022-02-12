@@ -20,7 +20,7 @@ class BlueSpiceSubPageTree extends BsExtensionMW {
 	 * @return bool
 	 */
 	public static function renderPageTree( $input, array $args, Parser $parser, PPFrame $frame ) {
-		$parser->getOutput()->addModules( "ext.bluespice.subpagetree" );
+		$parser->getOutput()->addModules( [ "ext.bluespice.subpagetree" ] );
 
 		$sTreeRoot = "";
 		if ( !empty( $args["root"] ) ) {
