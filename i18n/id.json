@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Veracious"
+		]
+	},
+	"bs-subpagetree-desc": "Tambahkan tag <code>subpagetree</code> dengan parameter konfigurasi, tampilkan panel pohon ExtJS dengan struktur subhalaman di suatu tempat pada halaman wiki."
+}
