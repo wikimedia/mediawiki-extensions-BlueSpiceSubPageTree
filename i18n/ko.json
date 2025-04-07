@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tensama0415"
+		]
+	},
+	"bs-subpagetree-desc": "설정 변수를 사용하여 태그 <code>subpagetree</code>를 추가하고, 위키 문서 어딘가에 하위 페이지 구조가 있는 ExtJS 트리 패널을 표시합니다."
+}
