@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-subpagetree-desc": "Hozzáadja a <code>subpagetree</code> tag-et konfigurációs paraméterekkel, megjeleníti az ExtJS fastruktúrát aloldalakkal a wiki lapon belül."
+}
