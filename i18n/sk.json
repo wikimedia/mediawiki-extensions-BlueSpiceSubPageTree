@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"bs-subpagetree-desc": "Pridáva značku <code>subpagetree</code> s konfiguračnými parametrami; zobrazí ExtJS stromový panel so štruktúrou podstránok na wiki stránke."
+}
